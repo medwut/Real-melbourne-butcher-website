@@ -1,0 +1,45 @@
+header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: #51f093;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #06fa26;
+    margin-top: 60px;
+}
+
+header {
+    border: 1px solid black;
+    box-shadow: 10px black;
+}
+
+p {
+    font-size: large;
+    color: rgb(63, 252, 104);
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: xx-large;
+    color: rgb(125, 16, 214);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.bk-image {
+    background-image: url('./steak.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+a {
+    text-align: right;
+}

@@ -1,0 +1,44 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script scr ="main.js"></script>
+    <title>Delivery Page</title>
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+    <h1> Delivery Page</h1>
+    <a href="index.html"> Click Here to see Home Page</a>
+
+    <div id="app">
+        <p> Email Name</p>
+        <input v-model='email'
+         placeholder="Please Enter Email"
+         />
+         <p>Email is: {{email}} </p>
+
+         <p> Location names: {{checkedNames}} </p>
+         <p> We only deliver to these select locations </p>
+
+         <input type='checkbox' id='Wantirna' value='Wantirna' v-model='checkedNames'>
+         <label for="Wantirna">Wantirna</label>
+         
+         <input type='checkbox' id='Burwood' value='Burwood' v-model='checkedNames'>
+         <label for="Burwood">Burwood</label>
+         
+         <input type='checkbox' id='CBD' value='CBD' v-model= 'checkedNames' >
+         <label for="CBD">CBD</label>
+         
+        </body>  
+        <script src ="main.js"></script>
+
+        <body>
+            <p>
+                Thank You for shopping at Melbourne Butchers Your delivery details will be emailed to you!
+            </p>
+
+        </body>
+    
