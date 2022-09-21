@@ -1,34 +1,56 @@
 header {
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
-    color: #51f093;
     text-align: center;
     margin-top: 20px;
+    background-color:green;
+    border: 1px solid black;
+    box-shadow: 10px black;
+    
 }
 
-#app {
+a {
+    text-align: center;
+    color: gold;
+}
+
+body{
+    background-color: rgb(81, 6, 114);
+}
+main {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #06fa26;
+    color: wheat;
     margin-top: 60px;
+    
 }
 
-header {
-    border: 1px solid black;
-    box-shadow: 10px black;
+label {
+    color: gold;
 }
+
+h2{
+    font-size: xx-large;
+    color: gold;
+    margin-top: 10px;
+    text-align: center;
+}
+
 
 p {
     font-size: large;
-    color: rgb(63, 252, 104);
+    color: gold;
     margin-top: 10px;
+    text-align: center;
+    size: 20%;
+    
 }
 
 h1 {
     font-size: xx-large;
-    color: rgb(125, 16, 214);
+    color: gold;
     margin-top: 10px;
     text-align: center;
 }
@@ -40,6 +62,71 @@ h1 {
     height: 100vh;
 }
 
-a {
-    text-align: right;
+#app {
+    text-align: center;
+}
+
+.containter {
+    top: 1220px;
+    left: 500px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: max-content;
+    background-color: wheat;
+    border: 3px solid black;
+}
+
+.containter2 {
+    top: 750px;
+    left: 500px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: max-content;
+    background-color: wheat;
+    border: 3px solid black;
+}
+
+.card {
+    border: 5px solid darkgreen;
+    width: max-content;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+
+.card img {
+    width: 300px;
+    padding: 5px;
+}
+
+.title {
+    font-weight: bold;
+    margin: 20px;
+}
+
+button {
+    border: 2px solid gold;
+    background: green;
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+    padding: 5px 10px;
+}
+
+button:hover {
+    box-shadow: 0 0 5px 5px gold inset;
+}
+
+.cart {
+    width: 250px;
+    float: right;
+    text-align: center;
+    border: 3px solid black;
+    overflow-y: scroll;
+    height: 140%;
+    background-color: wheat;
+}
+
+.cartImg > img {
+    width: 200px;
 }

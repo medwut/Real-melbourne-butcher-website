@@ -7,39 +7,132 @@
     <script scr ="main.js"></script>
     <title>Melbourne Butchers</title>
     <link rel="stylesheet" href="./style.css" />
-
+    <header>
+        <h1>Welcome to The Melbourne Butcher Shop </h1>
+        <a href="contact-page.html"> Click Here to see Contact Page</a>
+    <a href="delivery-page.html"> Click Here to see Delivery Page</a>
+      </header>
 </head>
 
 <main>
-    <header>
-      <h1>Welcome to The Melbourne Butcher Shop </h1>
-    </header>
-    <a href="contact-page.html"> Click Here to see Contact Page</a>
-    <a href="delivery-page.html"> Click Here to see Delivery Page</a>
+    <h2> Welcome Vister </h2>
+    <h2>Our Story</h2>
+    <body>
+   
+    <p style="text-align: center;">
+        This begins all the way back in November 1965 When Owners Margaret and Greg opened the Melbourne Butcher Shop on Flinder Street It was
+        one of the first of its kind with brand new cooling equipment.This lead to a boost in customers and product longevity as store owners could make products last for
+        longer and still taste the same way. Customers Loved the taste of homemade seasoned and cut meats. Margaret growing up on a farm was built for this business while her partner Greg was the brains of the operation finding new ways to introduce awesome and tasteful products to the streets of melbourne from all over the world. He imported cheeses from Switzerland and got fine Wagyu Beef from the finest Japanese farms. Now at the fine age of 67 and 69 Margaret and Gregg have chosen to retire but still are very interested in giving melbourne a taste of their original homemade seasoned meat. They have chosen to run a website to further expand their reach and influence the next generation of small family owned businesses through their experiences. 
+      </p>
+     
 
-    <p> Cart </p>
-    <!-- <img
-    src="https://images.unsplash.com/photo-1592686092916-672fa9e86866?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-    id="meatpic" alt="meat photo"> -->
-    <p>
-      Look at some of the Products down below now!
-    </p>
-
-  </main>
-
-
-
-<body>
-    
-           <p>
-            Our Story.
-            Our story begins all the way back in 1975 When Owners Margret and Greg opened the melbourne butcher shop It was
-            a
-            first of its kind with brand new cooling equipments.
+        <p style ="font-size: x-large;">
+            Look at some of the Products down below now!
           </p>
-          <p>This also lead to a boost in customers and product longevity as store owners could make products last for
-            longer
-            and still taste the same.</p>
-      
-        
+        </body>
+  </main>
+  
+  <body>
+    <div class = "containter">
+        <div class = "card" id = "item1">
+            <img src="C:\Users\ahmed\Documents\GitHub\Real melbourne-butcher-website\images\diced meat.png" alt="meat image">
+            <div class="title"> Diced Meat</div>
+            <div>
+                <label>Amount: </label>
+                <select>
+                    <option>100g</option>
+                    <option>200g</option>
+                    <option>300g</option>
+                    <option>400g</option>
+                    <option>500g</option>
+                </select>
+            </div>
+            <button onclick="addTocart(item1)">Add to Cart</button>
+        </div>
+            <div class = "card" id = "item2">
+            <img src="C:\Users\ahmed\Documents\GitHub\Real melbourne-butcher-website\images\dry aged steak.jpg" alt="meat image">
+            <div class="title"> Wine Aged Steak</div>
+            <div>
+                <label>Amount: </label>
+                <select>
+                    <option>100g</option>
+                    <option>200g</option>
+                    <option>300g</option>
+                    <option>400g</option>
+                    <option>500g</option>
+                </select>
+            </div>
+            <button onclick="addTocart(item2)">Add to Cart</button>
+        </div>
+        <div class = "card" id = "item3">
+            <img src="C:\Users\ahmed\Documents\GitHub\Real melbourne-butcher-website\images\minced meat.jpg" alt="meat image">
+            <div class="title"> Minced Meat</div>
+            <div>
+                <label>Amount: </label>
+                <select>
+                    <option>100g</option>
+                    <option>200g</option>
+                    <option>300g</option>
+                    <option>400g</option>
+                    <option>500g</option>
+                </select>
+            </div>
+            <button onclick="addTocart(item3)">Add to Cart</button>
+        </div>
+    </div>
+    <div class = "containter2">
+        <div class = "card" id = "item4">
+            <img src="C:\Users\ahmed\Documents\GitHub\Real melbourne-butcher-website\images\lamb meat.jpg" alt="meat image">
+            <div class="title"> Lamb Tomahawk</div>
+            <div>
+                <label>Amount: </label>
+                <select>
+                    <option>100g</option>
+                    <option>200g</option>
+                    <option>300g</option>
+                    <option>400g</option>
+                    <option>500g</option>
+                </select>
+            </div>
+            <button onclick="addTocart(item4)">Add to Cart</button>
+        </div>
+            <div class = "card" id = "item5">
+            <img src="C:\Users\ahmed\Documents\GitHub\Real melbourne-butcher-website\images\PORK LOIN BONELESS.jpg" alt="meat image">
+            <div class="title"> Pork Lions </div>
+            <div>
+                <label>Amount: </label>
+                <select>
+                    <option>100g</option>
+                    <option>200g</option>
+                    <option>300g</option>
+                    <option>400g</option>
+                    <option>500g</option>
+                </select>
+            </div>
+            <button onclick="addTocart(item5)">Add to Cart</button>
+        </div>
+        <div class = "card" id = "item6">
+            <img src="C:\Users\ahmed\Documents\GitHub\Real melbourne-butcher-website\images\new steak image.jpg" alt="meat image">
+            <div class="title"> Steak</div>
+            <div>
+                <label>Amount: </label>
+                <select>
+                    <option>100g</option>
+                    <option>200g</option>
+                    <option>300g</option>
+                    <option>400g</option>
+                    <option>500g</option>
+                </select>
+            </div>
+            <button onclick="addTocart(item6)">Add to Cart</button>
+        </div>
+        <script src = "main.js"></script>
+    </div>
+    <div class ="cart" id ="cart">
+        <div class = "title"> Cart</div><hr/>
+        <div id ="title"></div>
+    </div>
+  </body>
+ 
+ 
 </html>
