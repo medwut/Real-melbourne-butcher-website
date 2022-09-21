@@ -3,6 +3,9 @@ var component1 = {
     template: '<div> Payment On Delivery. </div>'
 
 }
+var component2 = {
+    template:'<button class="fancy-btn"> <slot></slot> </button>'
+}
 // This was used to add components and email/location to show when user entered it
 Vue.createApp({
     data() {
@@ -13,6 +16,7 @@ Vue.createApp({
     },
     components:{
         component1,
+        component2,
     }
 }).mount('#app')
 
@@ -55,5 +59,39 @@ function del (item){
 }
 
 
+ FancyButton('Click me!')
 
+// FancyButton renders slot content in its own template
+function FancyButton(slotContent) {
+  return `<button class="fancy-btn">
+      ${slotContent}
+    </button>`
+}
 
+function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+  
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+// expermintals
+const btn = document.getElementById('btn');
+
+// btn.addEventListener('click', () => {
+//   // 👇️ hide button
+//   btn.style.display = 'none';
+
+// });
