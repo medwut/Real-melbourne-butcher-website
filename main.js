@@ -90,8 +90,4 @@ function myFunction() {
 // expermintals
 const btn = document.getElementById('btn');
 
-// btn.addEventListener('click', () => {
-//   // 👇️ hide button
-//   btn.style.display = 'none';
-
-// });
+// var activeColor =ref('red')
